@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  text-align: center;
+  
+  
+}
+img {
+  max-width: 50%;
+}
