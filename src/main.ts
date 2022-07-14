@@ -43,13 +43,14 @@ type CommentData = {
   imageid: number
 }
 
-type film = {
+type FilmItem = {
   id: number
   title: string
   images: string
   description: string
   comments: CommentData[]
 }
+
 let state = {
    films: [
     {
@@ -95,6 +96,8 @@ let state = {
    ]
 }
 
+
+
 function renderFilmList () {
   let bodyEl = document.querySelector('body')
   
@@ -117,10 +120,16 @@ imageFilm.className = 'film-img'
 let descriptionSpane = document.createElement('spane')
 descriptionSpane.textContent = 'American superhero film based on Marvel Comics featuring the character Thor, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to Thor: Ragnarok (2017) and the 29th film in the Marvel Cinematic Universe (MCU).'
 
+
+
 bodyEl.append(mainEl)
 
 mainEl.append(divMain,)
 
 divMain.append(titleh2, imageFilm, descriptionSpane)
 }
+
 renderFilmList()
+
+
+
